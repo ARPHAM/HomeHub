@@ -291,6 +291,7 @@ input::placeholder {
   border-radius: 6px;
   margin-right: 10px;
   flex-direction: column;
+  -webkit-user-select: none;
 }
 .v3_2 img {
   width: 300px;
@@ -324,10 +325,12 @@ input::placeholder {
   font-size: 40px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
+  -webkit-user-select: none;
 }
 .v3_7 {
   display: flex;
   flex-direction: row;
+  -webkit-user-select: none;
 }
 .v3_7 img {
   margin-top: 30px;
