@@ -58,7 +58,7 @@ function news() {
             thêm 10 triệu tiền hợp đồng cho người thuê.</span
           >
           <div class="news_1_2_1_2">
-            <img src="/images/news_1_2_1.jpg" />
+            <img src="./images/news_1_2_1.jpg" />
           </div>
           <div></div>
         </div>
@@ -69,7 +69,7 @@ function news() {
             dzô....</span
           >
           <div class="news_1_2_1_2">
-            <img src="/images/news_1_2_2.jpg" />
+            <img src="./images/news_1_2_2.jpg" />
           </div>
           <div></div>
         </div>
@@ -79,15 +79,15 @@ function news() {
     <div class="news_2">
       <div class="news_2_1">
         <div class="news_2_1_1">
-          <img src="/images/news_2_2_1.jpg" />
+          <img src="./images/news_2_2_1.jpg" />
           <span>Bài Viết</span>
         </div>
         <div class="news_2_1_1">
-          <img src="/images/news_2_2_2.jpg" />
+          <img src="./images/news_2_2_2.jpg" />
           <span>Cá Nhân</span>
         </div>
         <div class="news_2_1_1">
-          <img src="/images/news_2_2_3.jpg" />
+          <img src="./images/news_2_2_3.jpg" />
           <span>Đã lưu</span>
         </div>
       </div>
@@ -95,7 +95,7 @@ function news() {
       <div class="news_2_2">
         <div class="news_2_2_1">
           <div>Thông báo</div>
-          <img src="/images/news_2_2_4.jpg" />
+          <img src="./images/news_2_2_4.jpg" />
         </div>
         <div class="news_2_2_2">
           <div class="news_2_2_2_1">Thông báo bài viết</div>
