@@ -10,7 +10,7 @@ for (let i = 0; i < div3_3.length; i++) {
     div3_3[deMuc].removeAttribute("style");
     e.target.setAttribute(
       "style",
-      "background-color: rgb(69, 169, 234); color: white"
+      "background-color: rgb(116, 175, 117); color: white"
     );
     deMuc = i;
     chang3_11(deMuc);
@@ -131,18 +131,18 @@ function maintain() {
 function contact() {
   div3_11.innerHTML = `
   <h3>Chi nhánh</h3>
-  <h5>    chi nhánh 1: chỗ đang ở</h5>
-  <h5>    chi nhánh 2: chưa xây</h5>
+  <h5 style="margin: 20px;">chi nhánh 1: chỗ đang ở</h5>
+  <h5 style="margin: 20px;">chi nhánh 2: chưa xây</h5>
   <h3>Số điện thoại</h3>
-  <h5>    Quản lý tòa nhà: 1800100biết</h5>
-  <h5>    Quản lý kế toán: 1800100nhớ</h5>
+  <h5 style="margin: 20px;">Quản lý tòa nhà: 1800100biết</h5>
+  <h5 style="margin: 20px;">Quản lý kế toán: 1800100nhớ</h5>
   <h3>Email: NgaiLam@gmail.com<h3>
   <h3>Fanpage: chưa có thời gian tạo</h3>
   <h3>Hotline bảo trì: Thuê ngoài nhá</h3>
   `;
   div3_11.setAttribute(
     "style",
-    "background-color: rgba(255, 255, 255, 1);  border-radius: 6px; height: ${window.innerHeight - 173}px;"
+    "background-color: rgba(255, 255, 255, 1);  border-radius: 6px; height: ${window.innerHeight - 173}px; padding: 20px"
   );
 }
 function aboutUs() {

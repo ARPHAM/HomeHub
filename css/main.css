@@ -295,7 +295,7 @@ input::placeholder {
   height: 100vh;
   padding: 10px;
   display: grid;
-  background-color: rgb(135, 173, 210);
+  background-color: rgb(157, 195, 171);
   grid-template-columns: 320px 1fr;
   -webkit-user-select: none;
 }
