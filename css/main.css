@@ -297,6 +297,7 @@ input::placeholder {
   display: grid;
   background-color: rgb(135, 173, 210);
   grid-template-columns: 320px 1fr;
+  -webkit-user-select: none;
 }
 .v3_2 {
   height: 100%;
