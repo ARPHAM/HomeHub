@@ -369,8 +369,6 @@ input::placeholder {
 .v3_11 {
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: 6fr 10px 2fr;
   margin-top: 10px;
 }
 .news_1 {
@@ -401,6 +399,9 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.news_1_2::-webkit-scrollbar {
+  width: 0;
 }
 .news_1_2_1 {
   width: 100%;

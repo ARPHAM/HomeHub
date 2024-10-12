@@ -103,9 +103,12 @@ function news() {
         </div>
       </div>
     </div>`;
-  console.log(div3_11);
   var News_1_2 = document.querySelector(".news_1_2");
-  News_1_2.setAttribute("style", `height: ${window.innerHeight - 173}px`);
+  News_1_2.setAttribute("style", `height: ${window.innerHeight - 173}px;`);
+  div3_11.setAttribute(
+    "style",
+    "display: grid; grid-template-columns: 6fr 10px 2fr;"
+  );
   window.addEventListener("resize", function () {
     News_1_2.setAttribute("style", `height: ${window.innerHeight - 173}px`);
   });
@@ -113,25 +116,42 @@ function news() {
 function services() {
   div3_11.innerHTML = `
   <h1>services</h1>`;
-  console.log(div3_11);
+  div3_11.setAttribute("style", "");
 }
 function payment() {
   div3_11.innerHTML = `
   <h1>payment</h1>`;
-  console.log(div3_11);
+  div3_11.setAttribute("style", "");
 }
 function maintain() {
   div3_11.innerHTML = `
   `;
-  console.log(div3_11);
+  div3_11.setAttribute("style", "");
 }
 function contact() {
   div3_11.innerHTML = `
-  <h1>contact</h1>`;
-  console.log(div3_11);
+  <h3>Chi nhánh</h3>
+  <h5>    chi nhánh 1: chỗ đang ở</h5>
+  <h5>    chi nhánh 2: chưa xây</h5>
+  <h3>Số điện thoại</h3>
+  <h5>    Quản lý tòa nhà: 1800100biết</h5>
+  <h5>    Quản lý kế toán: 1800100nhớ</h5>
+  <h3>Email: NgaiLam@gmail.com<h3>
+  <h3>Fanpage: chưa có thời gian tạo</h3>
+  <h3>Hotline bảo trì: Thuê ngoài nhá</h3>
+  `;
+  div3_11.setAttribute(
+    "style",
+    "background-color: rgba(255, 255, 255, 1);  border-radius: 6px; height: ${window.innerHeight - 173}px;"
+  );
 }
 function aboutUs() {
   div3_11.innerHTML = `
-  <h1>aboutUs</h1>`;
-  console.log(div3_11);
+  <h3>Chưa xây, chưa khánh thành</h3>
+  <h3>Đợi update sau...</h3>
+  `;
+  div3_11.setAttribute(
+    "style",
+    "background-color: rgba(255, 255, 255, 1);  border-radius: 6px; height: ${window.innerHeight - 173}px;"
+  );
 }
