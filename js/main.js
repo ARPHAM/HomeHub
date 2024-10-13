@@ -1,7 +1,7 @@
-var div3_3 = document.getElementsByClassName("v3_3");
-var div3_6 = document.querySelector(".v3_6");
-var div3_11 = document.querySelector(".v3_11");
-var deMuc = 0;
+let div3_3 = document.getElementsByClassName("v3_3");
+let div3_6 = document.querySelector(".v3_6");
+let div3_11 = document.querySelector(".v3_11");
+let deMuc = 0;
 news();
 console.log(div3_3[0]);
 for (let i = 0; i < div3_3.length; i++) {
@@ -103,7 +103,7 @@ function news() {
         </div>
       </div>
     </div>`;
-  var News_1_2 = document.querySelector(".news_1_2");
+  let News_1_2 = document.querySelector(".news_1_2");
   News_1_2.setAttribute("style", `height: ${window.innerHeight - 173}px;`);
   div3_11.setAttribute(
     "style",
