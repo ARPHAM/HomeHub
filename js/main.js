@@ -115,8 +115,58 @@ function news() {
 }
 function services() {
   div3_11.innerHTML = `
-  <h1>services</h1>`;
-  div3_11.setAttribute("style", "");
+  <div class="services_1">
+    <img
+      src="./images/Services_1.webp"
+      style="width: 80%; max-height: 100%; margin: 10px auto"
+    />
+    <span id="name_services">Cleaning</span>
+  </div>
+  <div class="services_1">
+    <img
+      src="./images/services_2.jpg"
+      style="max-width: 80%; max-height: 100%; margin: 10px auto"
+    />
+    <span id="name_services">swimming pool</span>
+  </div>
+  <div class="services_1">
+    <img
+      src="./images/services_3.png"
+      style="max-width: 80%; max-height: 100%; margin: 10px auto"
+    />
+    <span id="name_services">football field</span>
+  </div>`;
+  for (let i = 0; i < 15; i++) {
+    div3_11.innerHTML += `<div class="services_1">
+    <img
+      src="./images/services_3.png"
+      style="max-width: 80%; max-height: 100%; margin: 10px auto"
+    />
+    <span id="name_services">football field</span>
+  </div>`;
+  }
+  div3_11.setAttribute(
+    "style",
+    `height: ${
+      window.innerHeight - 130
+    }px; display: flex; flex-wrap: wrap; gap: 10px; overflow: auto;`
+  );
+  var services_1 = document.getElementsByClassName("services_1");
+  for (let i = 0; i < services_1.length; i++) {
+    services_1[i].onclick = function (e) {
+      form(services_1[i].innerText);
+    };
+  }
+}
+function form(e) {
+  div3_11.innerHTML = `FORM ĐĂNG KÍ DỊCH VỤ ${e}`;
+  div3_11.setAttribute(
+    "style",
+    `height: ${
+      window.innerHeight - 130
+    }px; background-color: rgba(245, 245, 245, 1)`
+  );
+  console.log(e);
 }
 function payment() {
   div3_11.innerHTML = `
