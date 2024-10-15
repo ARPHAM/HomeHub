@@ -31,9 +31,6 @@ function chang3_11(option) {
       maintain();
       break;
     case 4:
-      contact();
-      break;
-    case 5:
       aboutUs();
       break;
     default:
@@ -170,7 +167,37 @@ function form(e) {
 }
 function payment() {
   div3_11.innerHTML = `
-  <h1>payment</h1>`;
+  <table>
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Dịch vụ</th>
+        <th>thời gian</th>
+        <th>Địa Điểm</th>
+        <th>Trạng Thái</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <th>Pham Anh</th>
+        <th>Sân bóng</th>
+        <th>9/10/2023</th>
+        <th>HN</th>
+        <th>đã thanh toán</th>
+      </tr>
+      <tr>
+        <th>2</th>
+        <th>Pham Anh</th>
+        <th>Tiền điện tháng 10</th>
+        <th>9/10/2023</th>
+        <th>HN</th>
+        <th>đã thanh toán</td>
+      </tr>
+      <tr></tr>
+    </tbody>
+  </table>`;
   div3_11.setAttribute("style", "");
 }
 function maintain() {
@@ -178,7 +205,7 @@ function maintain() {
   `;
   div3_11.setAttribute("style", "");
 }
-function contact() {
+function aboutUs() {
   div3_11.innerHTML = `
   <h3>Chi nhánh</h3>
   <h5 style="margin: 20px;">chi nhánh 1: chỗ đang ở</h5>
@@ -189,14 +216,6 @@ function contact() {
   <h3>Email: NgaiLam@gmail.com<h3>
   <h3>Fanpage: chưa có thời gian tạo</h3>
   <h3>Hotline bảo trì: Thuê ngoài nhá</h3>
-  `;
-  div3_11.setAttribute(
-    "style",
-    "background-color: rgba(255, 255, 255, 1);  border-radius: 6px; height: ${window.innerHeight - 173}px; padding: 20px"
-  );
-}
-function aboutUs() {
-  div3_11.innerHTML = `
   <h3>Chưa xây, chưa khánh thành</h3>
   <h3>Đợi update sau...</h3>
   `;
