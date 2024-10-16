@@ -99,13 +99,13 @@ function news() {
     </div>`;
   let News_1_2 = document.querySelector(".news_1_2");
   News_1_2.setAttribute("style", `height: ${window.innerHeight - 173}px;`);
+  window.addEventListener("resize", function () {
+    News_1_2.setAttribute("style", `height: ${window.innerHeight - 173}px;`);
+  });
   div3_11.setAttribute(
     "style",
     "display: grid; grid-template-columns: 6fr 10px 2fr;"
   );
-  window.addEventListener("resize", function () {
-    News_1_2.setAttribute("style", `height: ${window.innerHeight - 173}px`);
-  });
 }
 function services() {
   div3_11.innerHTML = `
@@ -167,18 +167,38 @@ function services() {
   }
 }
 function form(e) {
-  div3_11.innerHTML = `FORM ĐĂNG KÍ DỊCH VỤ ${e}`;
-  div3_11.setAttribute(
+  div3_11.innerHTML = `
+  <div class="services_form_1">
+    <div class="services_form_1_1"><</div>
+    <div class="services_form_1_2">FORM DANG KI DANG KY DICH VU</div>
+  </div>
+  <div class="services_form_2">
+    <form action="" method=""></form>
+  </div>`;
+  let services_form_2 = document.querySelector(".services_form_2");
+  let services_form_1_1 = document.querySelector(".services_form_1_1");
+  services_form_1_1.onclick = function () {
+    services();
+  };
+  div3_11.setAttribute("style", "display: flex; flex-direction: column;");
+  services_form_2.setAttribute(
     "style",
-    `height: ${
-      window.innerHeight - 130
-    }px; background-color: rgba(245, 245, 245, 1)`
+    `background-color: rgba(255, 255, 255, 1);  border-radius: 6px; margin-top: 10px; width: 100%; height: ${
+      window.innerHeight - 190
+    }px;`
   );
+  window.addEventListener("resize", function () {
+    services_form_2.setAttribute(
+      "style",
+      `background-color: rgba(255, 255, 255, 1);  border-radius: 6px; margin-top: 10px; width: 100%; height: ${
+        window.innerHeight - 190
+      }px;`
+    );
+  });
   console.log(e);
 }
 function payment() {
-  div3_11.innerHTML = `
-  <table>
+  let div3_11innerHTML = `<table class = "table">
     <thead>
       <tr>
         <th>STT</th>
@@ -189,27 +209,46 @@ function payment() {
         <th>Trạng Thái</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <th>1</th>
-        <th>Pham Anh</th>
-        <th>Sân bóng</th>
-        <th>9/10/2023</th>
-        <th>HN</th>
-        <th>đã thanh toán</th>
+    <tbody>`;
+  for (let i = 0; i < 20; i++)
+    div3_11innerHTML += `<tr>
+        <td>${2 * i + 1}</td>
+        <td>Pham Anh</td>
+        <td>Sân bóng</td>
+        <td>9/10/2023</td>
+        <td>HN</td>
+        <td>đã thanh toán</td>
       </tr>
       <tr>
-        <th>2</th>
-        <th>Pham Anh</th>
-        <th>Tiền điện tháng 10</th>
-        <th>9/10/2023</th>
-        <th>HN</th>
-        <th>đã thanh toán</td>
-      </tr>
-      <tr></tr>
+        <td>${2 * i + 2}</td>
+        <td>Pham Anh</td>
+        <td>Tiền điện tháng 10</td>
+        <td>9/10/2023</td>
+        <td>HN</td>
+        <td>đã thanh toán</td>
+      </tr>`;
+  div3_11innerHTML += `
     </tbody>
   </table>`;
-  div3_11.setAttribute("style", "");
+  div3_11.innerHTML = div3_11innerHTML;
+  div3_11.setAttribute(
+    "style",
+    `height: ${
+      window.innerHeight - 130
+    }px; overflow: auto; padding: 0 20px 10px 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 6px;`
+  );
+  window.addEventListener("resize", function () {
+    div3_11.setAttribute(
+      "style",
+      `height: ${
+        window.innerHeight - 130
+      }px; overflow: auto; padding: 0 20px 10px 20px;
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 6px;`
+    );
+  });
 }
 function aboutUs() {
   div3_11.innerHTML = `
