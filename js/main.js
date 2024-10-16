@@ -28,9 +28,6 @@ function chang3_11(option) {
       payment();
       break;
     case 3:
-      maintain();
-      break;
-    case 4:
       aboutUs();
       break;
     default:
@@ -117,23 +114,37 @@ function services() {
       src="./images/Services_1.webp"
       style="width: 80%; max-height: 100%; margin: 10px auto"
     />
-    <span id="name_services">Cleaning</span>
+    <span id="name_services">CLEANING</span>
   </div>
   <div class="services_1">
     <img
       src="./images/services_2.jpg"
       style="max-width: 80%; max-height: 100%; margin: 10px auto"
     />
-    <span id="name_services">swimming pool</span>
+    <span id="name_services">SWIMMING POOL</span>
   </div>
   <div class="services_1">
     <img
       src="./images/services_3.png"
       style="max-width: 80%; max-height: 100%; margin: 10px auto"
     />
-    <span id="name_services">football field</span>
+    <span id="name_services">FOOTBALL FIELD</span>
+  </div>
+  <div class="services_1">
+    <img
+      src="./images/services_4.png"
+      style="max-width: 80%; max-height: 100%; margin: 10px auto"
+    />
+    <span id="name_services">MAINTAIN</span>
+  </div>
+  <div class="services_1">
+    <img
+      src="./images/services_5.png"
+      style="max-width: 80%; max-height: 100%; margin: 10px auto"
+    />
+    <span id="name_services">PHONG HOP</span>
   </div>`;
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < 14; i++) {
     div3_11.innerHTML += `<div class="services_1">
     <img
       src="./images/services_3.png"
@@ -198,11 +209,6 @@ function payment() {
       <tr></tr>
     </tbody>
   </table>`;
-  div3_11.setAttribute("style", "");
-}
-function maintain() {
-  div3_11.innerHTML = `
-  `;
   div3_11.setAttribute("style", "");
 }
 function aboutUs() {
