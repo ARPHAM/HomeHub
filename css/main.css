@@ -532,3 +532,54 @@ th {
   text-align: center;
   font-size: 20px;
 }
+
+/* css for tooltip  */
+
+/* Basic link styling */
+.tooltip {
+    position: relative;
+}
+
+/* Tooltip text container */
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 90%; /* Position above the link */
+    left: 5%;
+    transform: translateX(-50%);
+    background-color: #8d77b1;
+    color: #141313;
+    padding: 10px;
+    border-radius: 5px;
+    width: max-content;
+    max-width: 200px;
+    text-align: center;
+    white-space: normal;
+    font-size: 15px;
+    line-height: 1.4;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show tooltip when hovered */
+.tooltip:hover::after,
+.tooltip:hover::before {
+    opacity: 1;
+}
