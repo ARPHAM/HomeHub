@@ -47,10 +47,7 @@ function news() {
       <div class="news_1_2">
         <div class="news_1_2_1">
           <div class="news_1_2_1_1"></div>
-          <span
-            >Ngoài trả lại ba tháng tiền nhà, chủ còn sẵn sàng bồi thường
-            thêm 10 triệu tiền hợp đồng cho người thuê.</span
-          >
+          <span>Ngoài trả lại ba tháng tiền nhà, chủ còn sẵn sàng bồi thường thêm 10 triệu tiền hợp đồng cho người thuê.</span>
           <div class="news_1_2_1_2">
             <img src="./images/news_1_2_1.jpg" />
           </div>
@@ -58,10 +55,7 @@ function news() {
         </div>
         <div class="news_1_2_1">
           <div class="news_1_2_1_1"></div>
-          <span
-            >Hải sản "Mồng leo" cực quý hiếm đã có tại quầy mại
-            dzô....</span
-          >
+          <span>Hải sản "Mồng leo" cực quý hiếm đã có tại quầy mại dzô....</span>
           <div class="news_1_2_1_2">
             <img src="./images/news_1_2_2.jpg" />
           </div>
@@ -148,8 +142,7 @@ function services() {
     div3_11.innerHTML += `<div class="services_1">
     <img
       src="./images/services_3.png"
-      style="max-width: 80%; max-height: 100%; margin: 10px auto"
-    />
+      style="max-width: 80%; max-height: 100%; margin: 10px auto"/>
     <span id="name_services">football field</span>
   </div>`;
   }
