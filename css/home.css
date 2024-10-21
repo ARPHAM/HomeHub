@@ -4,7 +4,7 @@
     height: 100vh;
     padding: 10px;
     display: grid;
-    background-color: rgb(157, 195, 171);
+    background-color: rgb(26, 26, 27);
     grid-template-columns: 320px 1fr;
     -webkit-user-select: none;
   }
@@ -71,7 +71,7 @@
     flex-direction: column;
   }
   .v3_9 {
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 20px;
   }
   .v3_10 {
@@ -245,15 +245,15 @@
   /* css for tooltip  */
   
   /* Basic link styling */
-  .tooltip {
+  /* .tooltip {
       position: relative;
-  }
+  } */
   
   /* Tooltip text container */
-  .tooltip::after {
+  /* .tooltip::after {
       content: attr(data-tooltip);
       position: absolute;
-      top: 90%; /* Position above the link */
+      top: 90%; 
       left: 5%;
       transform: translateX(-50%);
       background-color: #8d77b1;
@@ -270,10 +270,10 @@
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.3s;
-  }
+  } */
   
   /* Tooltip arrow */
-  .tooltip::before {
+  /* .tooltip::before {
       content: '';
       position: absolute;
       bottom: 100%;
@@ -285,10 +285,10 @@
       z-index: 1;
       opacity: 0;
       transition: opacity 0.3s;
-  }
+  } */
   
   /* Show tooltip when hovered */
-  .tooltip:hover::after,
+  /* .tooltip:hover::after,
   .tooltip:hover::before {
       opacity: 1;
-  }
+  } */

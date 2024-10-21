@@ -136,7 +136,7 @@ function services() {
       src="./images/services_5.png"
       style="max-width: 80%; max-height: 100%; margin: 10px auto"
     />
-    <span id="name_services">PHONG HOP</span>
+    <span id="name_services">BOARDROOM</span>
   </div>`;
   for (let i = 0; i < 14; i++) {
     div3_11.innerHTML += `<div class="services_1">
