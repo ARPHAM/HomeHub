@@ -134,7 +134,7 @@ function services() {
   <div class="services_1">
     <img
       src="./images/services_5.png"
-      style="max-width: 80%; max-height: 100%; margin: 10px auto"
+      style="max-width: 80%; max-height: 100%; margin: 10px auto;"
     />
     <span id="name_services">BOARDROOM</span>
   </div>`;
