@@ -15,14 +15,6 @@
 } */
 
 /* Container for Profile Card */
-.container-info {
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  top: 100px;
-  left: 1170px;
-}
-
 .profile-card {
   background-color: white;
   border-radius: 15px;
@@ -31,6 +23,9 @@
   text-align: center;
   width: 350px;
   animation: slide-in 0.5s ease-out;
+  position: fixed;
+  top: 100px;
+  left: 170px;
 }
 
 /* Profile Image */
