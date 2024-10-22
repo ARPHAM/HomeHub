@@ -166,7 +166,7 @@ function form(e) {
     <div class="services_form_1_2">FORM DANG KI DANG KY DICH VU</div>
   </div>
   <div class="services_form_2">
-    <div class="container">
+    <div class="container-form">
         <h2>Đăng Ký Dịch Vụ</h2>
         <form action="/payment" method="POST">
             <label for="name">Tên của bạn:</label>
