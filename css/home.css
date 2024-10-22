@@ -200,11 +200,14 @@ body {
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
   border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .services_1:hover {
   background-color: rgba(200, 240, 200, 1);
+  transform: translateY(-5px); /* Di chuyển lên trên 10px */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8); /* Tạo bóng đổ dưới phần tử */
 }
 table {
   width: 100%;
@@ -346,53 +349,3 @@ button:hover {
 button:active {
   transform: scale(0.98);
 }
-/* css for tooltip  */
-
-/* Basic link styling */
-/* .tooltip {
-      position: relative;
-  } */
-
-/* Tooltip text container */
-/* .tooltip::after {
-      content: attr(data-tooltip);
-      position: absolute;
-      top: 90%; 
-      left: 5%;
-      transform: translateX(-50%);
-      background-color: #8d77b1;
-      color: #141313;
-      padding: 10px;
-      border-radius: 5px;
-      width: max-content;
-      max-width: 200px;
-      text-align: center;
-      white-space: normal;
-      font-size: 15px;
-      line-height: 1.4;
-      z-index: 1;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s;
-  } */
-
-/* Tooltip arrow */
-/* .tooltip::before {
-      content: '';
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      border-width: 5px;
-      border-style: solid;
-      border-color: transparent transparent #333 transparent;
-      z-index: 1;
-      opacity: 0;
-      transition: opacity 0.3s;
-  } */
-
-/* Show tooltip when hovered */
-/* .tooltip:hover::after,
-  .tooltip:hover::before {
-      opacity: 1;
-  } */
