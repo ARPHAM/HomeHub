@@ -166,7 +166,27 @@ function form(e) {
     <div class="services_form_1_2">FORM DANG KI DANG KY DICH VU</div>
   </div>
   <div class="services_form_2">
-    <form action="" method=""></form>
+    <div class="container">
+        <h2>Đăng Ký Dịch Vụ</h2>
+        <form action="/payment" method="POST">
+            <label for="name">Tên của bạn:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập tên" required>
+
+            <label for="address">Số nhà:</label>
+            <input type="text" id="address" name="address" placeholder="Nhập số nhà" required>
+
+            <label for="service_time">Thời gian sử dụng dịch vụ:</label>
+            <select id="service_time" name="service_time" required>
+                <option value="" disabled selected>Chọn thời gian</option>
+                <option value="1 month">1 Tháng</option>
+                <option value="3 months">3 Tháng</option>
+                <option value="6 months">6 Tháng</option>
+                <option value="1 year">1 Năm</option>
+            </select>
+
+            <button type="submit">Thanh Toán</button>
+        </form>
+    </div>
   </div>`;
   let services_form_2 = document.querySelector(".services_form_2");
   let services_form_1_1 = document.querySelector(".services_form_1_1");
