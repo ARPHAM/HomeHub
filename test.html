@@ -1,50 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="./css/main.css" rel="stylesheet" />
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
-    />
-    <title>Homepage</title>
-  </head>
-  <body>
-    <div class="v3_1">
-      <div class="v3_2">
-        <img src="./images/v1_3.png" />
-        <div
-          class="v3_3"
-          style="background-color: rgb(116, 175, 117); color: white"
-        >
-          News
-        </div>
-        <div class="v3_3">Services</div>
-        <div class="v3_3">Payment</div>
-        <div class="v3_3">About us</div>
-      </div>
-      <div class="v3_4">
-        <div class="v3_5">
-          <div class="v3_6">News</div>
-          <div class="v3_7">
-            <img src="./images/v3_7.jpg" />
-            <div class="v3_8">
-              <span class="v3_9">ARPHAM</span>
-              <span class="v3_10">Oaichua42@gmail.com</span>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flip Logo</title>
+    <style>
+        .flip-container {
+            perspective: 1000px; /* Tạo độ sâu 3D */
+            width: 150px;
+            height: 150px;
+        }
+
+        .flipper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s; /* Thời gian chuyển đổi 0.5 giây */
+            transform-style: preserve-3d; /* Bảo quản hiệu ứng 3D */
+        }
+
+        .flip-container:hover .flipper {
+            transform: rotateY(180deg); /* Lật theo trục Y */
+        }
+
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Ẩn mặt sau khi lật */
+        }
+
+        .front {
+            background-color: #3498db; /* Màu nền cho mặt trước */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        .back {
+            background-color: #e74c3c; /* Màu nền cho mặt sau */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            transform: rotateY(180deg); /* Xoay mặt sau 180 độ */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flip-container">
+        <div class="flipper">
+            <!-- Mặt trước của logo -->
+            <div class="front">
+                Front Logo
             </div>
-          </div>
+            <!-- Mặt sau của logo -->
+            <div class="back">
+                Back Logo
+            </div>
         </div>
-        <div class="v3_11">
-          <div class="services_form_1">
-            <div class="services_form_1_1"><</div>
-            <div class="services_form_1_2">FORM DANG KI DANG KY DICH VU</div>
-          </div>
-          <div class="services_form_2">
-            <form action="" method=""></form>
-          </div>
-        </div>
-      </div>
     </div>
-    <script src="./js/test.js"></script>
-  </body>
+
+</body>
 </html>
