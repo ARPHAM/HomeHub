@@ -200,7 +200,7 @@ body {
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
+  text-align: center;
   border-radius: 6px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -348,4 +348,114 @@ button:hover {
 
 button:active {
   transform: scale(0.98);
+}
+
+.container-abu {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.h1_abu {
+  text-align: center;
+  color: #333;
+}
+
+.p_abu {
+  text-align: center;
+  color: #555;
+  margin: 10px 0;
+}
+*/ .slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.slides {
+  display: none;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add a simple animation to the slideshow */
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slides {
+  animation: fade 1.5s;
+}
+
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.contact-info strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.contact-info p {
+  color: #555;
+  margin-bottom: 5px;
 }

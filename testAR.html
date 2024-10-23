@@ -11,6 +11,99 @@
     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
     <link rel="stylesheet" href="./css/infor.css" />
     <title>Homepage</title>
+    <style>
+      /* Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+      }
+
+      .container-abu {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 20px;
+        animation: fadeInDown 1s ease-in-out; /* Hiệu ứng mờ dần xuất hiện */
+      }
+
+      .intro {
+        text-align: center;
+        margin-bottom: 40px;
+        animation: fadeIn 2s ease-in-out; /* Hiệu ứng mờ dần */
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+
+      .gallery img {
+        width: 30%;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tạo hiệu ứng mượt mà */
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05); /* Phóng to ảnh khi di chuột vào */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Tạo bóng đổ */
+      }
+
+      .details {
+        text-align: center;
+      }
+
+      .details p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: fadeInUp 1.5s ease forwards; /* Hiệu ứng trượt lên và mờ dần */
+      }
+
+      /* Animation Keyframes */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="v3_1">
@@ -44,6 +137,7 @@
               <p><strong>Phone:</strong> (555) 123-4567</p>
               <p><strong>Location:</strong> New York, USA</p>
             </div>
+            <br /><br /><br /><br />
             <div class="btn-container">
               <div>
                 <button class="btn">Edit Profile</button>
@@ -73,7 +167,5 @@
         <div class="v3_11"></div>
       </div>
     </div>
-    <script src="./js/main.js"></script>
-    <script src="./js/infor.js"></script>
   </body>
 </html>
