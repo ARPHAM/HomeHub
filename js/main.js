@@ -46,17 +46,23 @@ function news() {
       <div></div>
       <div class="news_1_2">
         <div class="news_1_2_1">
-          <div class="news_1_2_1_1"></div>
-          <span>Ngoài trả lại ba tháng tiền nhà, chủ còn sẵn sàng bồi thường thêm 10 triệu tiền hợp đồng cho người thuê.</span>
-          <div class="news_1_2_1_2">
+          <div class="news_1_2_1_1">
+            <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/01/anh-avatar-dep-dai-dien-facebook-zalo.jpg" />
+            <div>Hót hòn họt</div>
+          </div>
+          <div class="news_1_2_1_2">Ngoài trả lại ba tháng tiền nhà, chủ còn sẵn sàng bồi thường thêm 10 triệu tiền hợp đồng cho người thuê.</div>
+          <div class="news_1_2_1_3">
             <img src="./images/news_1_2_1.jpg" />
           </div>
           <div></div>
         </div>
         <div class="news_1_2_1">
-          <div class="news_1_2_1_1"></div>
-          <span>Hải sản "Mồng leo" cực quý hiếm đã có tại quầy mại dzô....</span>
-          <div class="news_1_2_1_2">
+          <div class="news_1_2_1_1">
+            <img src="https://daihocdaivietsaigon.edu.vn/wp-content/uploads/2023/02/1676242016_111-Hinh-Anh-Avatar-Nu-Dep-Phong-Cach-CHILL-HET.jpg" />
+            <div>Mị muốn đi chơi</div>
+          </div>
+          <div class="news_1_2_1_2">Hải sản "Mồng leo" cực quý hiếm đã có tại quầy mại dzô....</div>
+          <div class="news_1_2_1_3">
             <img src="./images/news_1_2_2.jpg" />
           </div>
           <div></div>
