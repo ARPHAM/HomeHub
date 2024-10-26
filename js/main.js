@@ -267,11 +267,11 @@ function aboutUs() {
   div3_11.innerHTML = `
   <div class="container-abu">
     <!-- Tiêu đề chính -->
-    <h1 class = "h1_abu">Welcome to Sky Tower Apartments</h1>
+    <h1>Welcome to Sky Tower Apartments</h1>
 
     <!-- Phần giới thiệu chung -->
     <div class="intro">
-      <p class = "p_abu">
+      <p>
         Discover the height of luxury and comfort with breathtaking
         views of the city. Sky Tower Apartments offers modern living
         spaces designed to provide residents with an elegant and serene
