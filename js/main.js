@@ -101,6 +101,8 @@ function news() {
     "display: grid; grid-template-columns: 6fr 10px 2fr;"
   );
 }
+
+// Trang service
 function services() {
   div3_11.innerHTML = `
   <div class="services_1">
@@ -159,6 +161,8 @@ function services() {
     };
   }
 }
+
+// Trang đăng ký dịch vụ
 function form(e) {
   div3_11.innerHTML = `
   <div class="services_form_1">
@@ -210,6 +214,8 @@ function form(e) {
   });
   console.log(e);
 }
+
+// Trang thanh toán
 function payment() {
   let div3_11innerHTML = `<table class = "table">
     <thead>
@@ -263,6 +269,9 @@ function payment() {
     );
   });
 }
+
+// Trang About us
+
 function aboutUs() {
   div3_11.innerHTML = `
   <div class="container-abu">
